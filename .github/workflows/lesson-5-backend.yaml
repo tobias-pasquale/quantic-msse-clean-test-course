@@ -10,9 +10,9 @@ jobs:
     defaults:
       run:
         working-directory: backend
-    - name: Execute the PyCharm Security Tests
       steps: 
-        - uses: actions/checkout@v4
+        - name: Execute the PyCharm Security Tests
+          uses: actions/checkout@v4
         - name: PyCharm Python Security Scanner
           uses: tonybaloney/pycharm-security@1.25.1
   build_and_test:
